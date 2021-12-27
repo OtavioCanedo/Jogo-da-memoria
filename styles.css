@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  background: #00ffff;
+}
+  
+.jogo{
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  background-color: #ff0000;
+  flex-wrap: wrap;
+}
+  
+ .carta{
+  width: calc(25% - 10px);
+  height: calc(33.33% - 10px);
+  margin: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+  
+.carta:active{
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+  
+.carta.flip{
+  transform: rotateY(180deg);
+}
+  
+.frente,
+.verso{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  background: #fff;
+  backface-visibility: hidden;
+}
+  
+.frente{
+  transform: rotateY(180deg);
+}
+
+.cronometro{
+  background: #fff;
+  width: 86px; 
+  height: 18px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.botao1,
+.botao2,
+.botao3{
+  width: 87px;
+  height: 40px;
+  margin-left: 186px;
+}
+
+.botao1{
+  margin-left: 640px;
+}

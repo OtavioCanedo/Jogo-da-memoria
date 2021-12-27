@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html> 
+ <head>
+  <meta charset="utf-8"/>
+  <title>Jogo da Memória</title>
+  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+  <form name="form_main">
+    <br />
+
+    <button type="button" name="start" class="botao1">Começar</button>
+    <button type="button" name="pause" class="botao2">Pausar</button>
+    <button type="button" name="reset" class="botao3">Resetar </button>
+
+    <div class="cronometro">
+      <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+    </div>
+  </form>
+  
+  <section class="jogo">
+    <div class="carta" data-framework="nunchaku">
+      <img class="frente" src="img/nunchaku.svg" alt="Frente carta - Nunchaku">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    <div class="carta" data-framework="nunchaku">
+      <img class="frente" src="img/nunchaku.svg" alt="Frente carta - Nunchaku">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    
+    <div class="carta" data-framework="parachute">
+      <img class="frente" src="img/parachute.svg" alt="Frente carta - Parachute">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    <div class="carta" data-framework="parachute">
+      <img class="frente" src="img/parachute.svg" alt="Frente carta - Parachute">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    
+    <div class="carta" data-framework="helmet">
+      <img class="frente" src="img/helmet.svg" alt="Frente carta - Helmet">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    <div class="carta" data-framework="helmet">
+      <img class="frente" src="img/helmet.svg" alt="Frente carta - Helmet">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    
+    <div class="carta" data-framework="Flipper">
+      <img class="frente" src="img/flipper.svg" alt="Frente carta - Flipper">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    <div class="carta" data-framework="Flipper">
+      <img class="frente" src="img/flipper.svg" alt="Frente carta - Flipper">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    
+    <div class="carta" data-framework="chairlift">
+      <img class="frente" src="img/chairlift.svg" alt="Frente carta - Chairlift">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    <div class="carta" data-framework="chairlift">
+      <img class="frente" src="img/chairlift.svg" alt="Frente carta - Chairlift">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    
+    <div class="carta" data-framework="windsurf">
+      <img class="frente" src="img/windsurf.svg" alt="Frente carta - Windsurf">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+    <div class="carta" data-framework="windsurf">
+      <img class="frente" src="img/windsurf.svg" alt="Frente carta - Windsurf">
+      <img class="verso" src="img/logo-puc-minas.svg" alt="Verso carta - Logo Puc">
+    </div>
+  </section>  
+
+  <script src="./scripts.js"></script>
+ </body>
+</html>
